@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proyectos Proteus</title>
+  <style>
+    :root{--bg:#0d1117;--card:#161b22;--line:#30363d;--txt:#e6edf3;--acc:#58a6ff;--dim:#8b949e}
+    *{box-sizing:border-box}
+    body{
+      font-family:system-ui,-apple-system,sans-serif;
+      margin:0;padding:0 0 60px;color:var(--txt);background:var(--bg);
+      background-image:
+        linear-gradient(rgba(13,17,23,.86),rgba(13,17,23,.94)),
+        url("fondo.jpg"),
+        repeating-linear-gradient(90deg,#1a2230 0 2px,transparent 2px 46px);
+      background-size:cover,cover,auto;
+      background-attachment:fixed;
+      background-position:center;
+    }
+    header{
+      position:relative;padding:64px 24px 48px;text-align:center;overflow:hidden;
+      border-bottom:1px solid var(--line);
+      background:url("banner.jpg") center/cover no-repeat;
+    }
+    header::after{
+      content:"";position:absolute;inset:0;
+      background:linear-gradient(180deg,rgba(13,17,23,.35),rgba(13,17,23,.95));
+    }
+    .inner{position:relative;z-index:1;max-width:760px;margin:0 auto}
+    h1{margin:0 0 8px;font-size:2rem;letter-spacing:-.5px}
+    .tag{
+      display:inline-block;font:600 .72rem/1 ui-monospace,monospace;letter-spacing:1.5px;
+      text-transform:uppercase;color:#79c0ff;border:1px solid #1f6feb55;
+      background:#1f6feb1a;border-radius:999px;padding:6px 12px;margin-bottom:16px
+    }
+    .sub{color:#c9d1d9;margin:0;font-size:.95rem}
+    main{max-width:760px;margin:0 auto;padding:28px 16px}
+    h2{font-size:.78rem;text-transform:uppercase;letter-spacing:1.6px;color:var(--dim);margin:28px 0 10px}
+    ul{list-style:none;padding:0;margin:0}
+    li{
+      display:flex;align-items:center;gap:12px;
+      background:rgba(22,27,34,.78);backdrop-filter:blur(6px);
+      border:1px solid var(--line);border-radius:8px;margin:8px 0;
+      transition:border-color .15s,background .15s
+    }
+    li:hover{border-color:#1f6feb;background:rgba(31,38,48,.9)}
+    .ico{width:34px;flex:0 0 34px;text-align:center;font:700 .62rem/34px ui-monospace,monospace;color:var(--dim);letter-spacing:.5px}
+    a{flex:1;display:block;padding:13px 14px 13px 0;color:var(--acc);text-decoration:none;font-size:.94rem}
+    a:hover{text-decoration:underline}
+    footer{max-width:760px;margin:0 auto;padding:24px 16px 0;color:var(--dim);font-size:.78rem;border-top:1px solid var(--line);margin-top:32px}
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="inner">
+    <span class="tag">Proteus / ARES</span>
+    <h1>Proyectos Proteus</h1>
+    <p class="sub">Esquemáticos, PCB y vistas 3D. Diseño electrónico documentado</p>
+    <p class="sub">José Jaime Fajardo Jiménez</p>
+  </div>
+</header>
+
+<main>
+  <h2>BVD</h2>
+  <ul>
+    <li><span class="ico">3D</span><a href="BVD%203D.pdf">BVD 3D (PDF)</a></li>
+    <li><span class="ico">PCB</span><a href="BVD%20PCB.PDF">BVD PCB (PDF)</a></li>
+    <li><span class="ico">PRJ</span><a href="BVD%20PCB.pdsprj" download>BVD PCB (Proteus)</a></li>
+  </ul>
+
+  <h2>Fuente Impresora XL4015</h2>
+  <ul>
+    <li><span class="ico">PDF</span><a href="Fuente%20Impresora%20XL4015.pdf">Fuente Impresora XL4015 (PDF)</a></li>
+    <li><span class="ico">PRJ</span><a href="Fuente%20Impresora%20XL4015.pdsprj" download>Fuente Impresora XL4015 (Proteus)</a></li>
+    <li><span class="ico">3D</span><a href="Fuente%20Impresora%203D.pdf">Fuente Impresora 3D (PDF)</a></li>
+  </ul>
+
+  <h2>SCLSA</h2>
+  <ul>
+    <li><span class="ico">3D</span><a href="SCLSA%203D.pdf">SCLSA 3D (PDF)</a></li>
+    <li><span class="ico">PCB</span><a href="SCLSA%20PCB.PDF">SCLSA PCB (PDF)</a></li>
+    <li><span class="ico">PRJ</span><a href="SCLSA%20PCB.pdsprj" download>SCLSA PCB (Proteus)</a></li>
+  </ul>
+</main>
+
+<footer>
+  Los archivos <code>.pdsprj</code> requieren Proteus 8 o superior. Los PDF se abren en el navegador.
+</footer>
+
+</body>
+</html>
